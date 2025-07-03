@@ -3,7 +3,6 @@
 *~
 .DS_Store
 *.pyc
-figs*/*
 .vscode/
 .cache/
 **/*.pyc
@@ -32,8 +31,5 @@ logs/**
 config.json
 config.precomputed_syns.json
 run_bionet_old.py
-arbor.*/
 build_files__/
-output_*/
-output.*/
 update_morphologies.py
