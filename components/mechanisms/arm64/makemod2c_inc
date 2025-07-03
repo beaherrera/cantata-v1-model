@@ -1,0 +1,200 @@
+./Ca_HVA.c: ../modfiles/Ca_HVA.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Ca_HVA.mod" -o "/Users/beaherrera/Documents/Python-scripts/arbor-bmtk/cantata-v1-model/components/mechanisms/arm64")
+
+./Ca_HVA.o: ./Ca_HVA.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./Ca_LVA.c: ../modfiles/Ca_LVA.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Ca_LVA.mod" -o "/Users/beaherrera/Documents/Python-scripts/arbor-bmtk/cantata-v1-model/components/mechanisms/arm64")
+
+./Ca_LVA.o: ./Ca_LVA.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./CaDynamics.c: ../modfiles/CaDynamics.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "CaDynamics.mod" -o "/Users/beaherrera/Documents/Python-scripts/arbor-bmtk/cantata-v1-model/components/mechanisms/arm64")
+
+./CaDynamics.o: ./CaDynamics.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./exp1isyn.c: ../modfiles/exp1isyn.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "exp1isyn.mod" -o "/Users/beaherrera/Documents/Python-scripts/arbor-bmtk/cantata-v1-model/components/mechanisms/arm64")
+
+./exp1isyn.o: ./exp1isyn.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./exp1syn.c: ../modfiles/exp1syn.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "exp1syn.mod" -o "/Users/beaherrera/Documents/Python-scripts/arbor-bmtk/cantata-v1-model/components/mechanisms/arm64")
+
+./exp1syn.o: ./exp1syn.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./Ih.c: ../modfiles/Ih.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Ih.mod" -o "/Users/beaherrera/Documents/Python-scripts/arbor-bmtk/cantata-v1-model/components/mechanisms/arm64")
+
+./Ih.o: ./Ih.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./Im_v2.c: ../modfiles/Im_v2.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Im_v2.mod" -o "/Users/beaherrera/Documents/Python-scripts/arbor-bmtk/cantata-v1-model/components/mechanisms/arm64")
+
+./Im_v2.o: ./Im_v2.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./Im.c: ../modfiles/Im.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Im.mod" -o "/Users/beaherrera/Documents/Python-scripts/arbor-bmtk/cantata-v1-model/components/mechanisms/arm64")
+
+./Im.o: ./Im.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./K_P.c: ../modfiles/K_P.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "K_P.mod" -o "/Users/beaherrera/Documents/Python-scripts/arbor-bmtk/cantata-v1-model/components/mechanisms/arm64")
+
+./K_P.o: ./K_P.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./K_T.c: ../modfiles/K_T.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "K_T.mod" -o "/Users/beaherrera/Documents/Python-scripts/arbor-bmtk/cantata-v1-model/components/mechanisms/arm64")
+
+./K_T.o: ./K_T.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./Kd.c: ../modfiles/Kd.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Kd.mod" -o "/Users/beaherrera/Documents/Python-scripts/arbor-bmtk/cantata-v1-model/components/mechanisms/arm64")
+
+./Kd.o: ./Kd.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./Kv2like.c: ../modfiles/Kv2like.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Kv2like.mod" -o "/Users/beaherrera/Documents/Python-scripts/arbor-bmtk/cantata-v1-model/components/mechanisms/arm64")
+
+./Kv2like.o: ./Kv2like.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./Kv3_1.c: ../modfiles/Kv3_1.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Kv3_1.mod" -o "/Users/beaherrera/Documents/Python-scripts/arbor-bmtk/cantata-v1-model/components/mechanisms/arm64")
+
+./Kv3_1.o: ./Kv3_1.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./Nap.c: ../modfiles/Nap.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Nap.mod" -o "/Users/beaherrera/Documents/Python-scripts/arbor-bmtk/cantata-v1-model/components/mechanisms/arm64")
+
+./Nap.o: ./Nap.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./NaTa.c: ../modfiles/NaTa.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "NaTa.mod" -o "/Users/beaherrera/Documents/Python-scripts/arbor-bmtk/cantata-v1-model/components/mechanisms/arm64")
+
+./NaTa.o: ./NaTa.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./NaTs.c: ../modfiles/NaTs.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "NaTs.mod" -o "/Users/beaherrera/Documents/Python-scripts/arbor-bmtk/cantata-v1-model/components/mechanisms/arm64")
+
+./NaTs.o: ./NaTs.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./NaV.c: ../modfiles/NaV.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "NaV.mod" -o "/Users/beaherrera/Documents/Python-scripts/arbor-bmtk/cantata-v1-model/components/mechanisms/arm64")
+
+./NaV.o: ./NaV.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./SK.c: ../modfiles/SK.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "SK.mod" -o "/Users/beaherrera/Documents/Python-scripts/arbor-bmtk/cantata-v1-model/components/mechanisms/arm64")
+
+./SK.o: ./SK.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./stp1syn.c: ../modfiles/stp1syn.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "stp1syn.mod" -o "/Users/beaherrera/Documents/Python-scripts/arbor-bmtk/cantata-v1-model/components/mechanisms/arm64")
+
+./stp1syn.o: ./stp1syn.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./stp2syn.c: ../modfiles/stp2syn.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "stp2syn.mod" -o "/Users/beaherrera/Documents/Python-scripts/arbor-bmtk/cantata-v1-model/components/mechanisms/arm64")
+
+./stp2syn.o: ./stp2syn.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./stp3syn.c: ../modfiles/stp3syn.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "stp3syn.mod" -o "/Users/beaherrera/Documents/Python-scripts/arbor-bmtk/cantata-v1-model/components/mechanisms/arm64")
+
+./stp3syn.o: ./stp3syn.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./stp4syn.c: ../modfiles/stp4syn.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "stp4syn.mod" -o "/Users/beaherrera/Documents/Python-scripts/arbor-bmtk/cantata-v1-model/components/mechanisms/arm64")
+
+./stp4syn.o: ./stp4syn.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./stp5isyn.c: ../modfiles/stp5isyn.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "stp5isyn.mod" -o "/Users/beaherrera/Documents/Python-scripts/arbor-bmtk/cantata-v1-model/components/mechanisms/arm64")
+
+./stp5isyn.o: ./stp5isyn.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./stp5syn.c: ../modfiles/stp5syn.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "stp5syn.mod" -o "/Users/beaherrera/Documents/Python-scripts/arbor-bmtk/cantata-v1-model/components/mechanisms/arm64")
+
+./stp5syn.o: ./stp5syn.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+
+./vecevent.c: ../modfiles/vecevent.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../modfiles";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "vecevent.mod" -o "/Users/beaherrera/Documents/Python-scripts/arbor-bmtk/cantata-v1-model/components/mechanisms/arm64")
+
+./vecevent.o: ./vecevent.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../modfiles" $(INCLUDES) -fPIC -c $< -o $@
+

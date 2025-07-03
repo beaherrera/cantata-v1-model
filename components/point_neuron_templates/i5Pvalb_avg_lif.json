@@ -1,0 +1,5 @@
+{
+  "tau": 0.052203861731024613, 
+  "type": "NEURON_IntFire1", 
+  "refrac": 0.003
+}

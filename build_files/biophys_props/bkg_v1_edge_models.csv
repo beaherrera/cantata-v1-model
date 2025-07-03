@@ -1,0 +1,163 @@
+edge_type_id dynamics_params model_template syn_weight distance_range target_sections delay target_model_id target_label source_label nsyns
+7066 AMPA_ExcToExc.json exp2syn 1.08903824855e-05 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 471129934 biophysical BKG 24
+7067 AMPA_ExcToExc.json exp2syn 3.11851881082e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 471143169 biophysical BKG 23
+7068 AMPA_ExcToExc.json exp2syn 4.3969421778599995e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 471758398 biophysical BKG 23
+7069 AMPA_ExcToExc.json exp2syn 3.43091177078e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 471767045 biophysical BKG 23
+7070 AMPA_ExcToExc.json exp2syn 1.28540355656e-05 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 485574832 biophysical BKG 20
+7071 AMPA_ExcToExc.json exp2syn 3.5964928358800005e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 485835055 biophysical BKG 23
+7072 AMPA_ExcToExc.json exp2syn 2.8060342949799998e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 485880739 biophysical BKG 25
+7073 AMPA_ExcToExc.json exp2syn 2.1996382948799998e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 486052980 biophysical BKG 21
+7074 AMPA_ExcToExc.json exp2syn 3.7685220269800002e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 486110216 biophysical BKG 11
+7075 AMPA_ExcToExc.json exp2syn 1.25591206244e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 487664663 biophysical BKG 25
+7076 AMPA_ExcToExc.json exp2syn 0.0006025849113659999 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 485912047 biophysical BKG 10
+7077 AMPA_ExcToExc.json exp2syn 4.09204006474e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 487661754 biophysical BKG 19
+7078 AMPA_ExcToInh.json exp2syn 8.605979290700001e-05 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 321708130 biophysical BKG 12
+7079 AMPA_ExcToInh.json exp2syn 0.000114966148259 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 466245544 biophysical BKG 10
+7080 AMPA_ExcToInh.json exp2syn 2.06960887089e-05 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 471087830 biophysical BKG 8
+7081 AMPA_ExcToInh.json exp2syn 0.00012006742058899999 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 475888653 biophysical BKG 10
+7082 AMPA_ExcToInh.json exp2syn 4.10580800351e-05 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 478058328 biophysical BKG 8
+7083 AMPA_ExcToInh.json exp2syn 6.27441422864e-05 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 478828646 biophysical BKG 7
+7084 AMPA_ExcToExc.json exp2syn 0.00014796309583700002 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 313862022 biophysical BKG 10
+7085 AMPA_ExcToExc.json exp2syn 2.3732344940199999e-07 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 314900022 biophysical BKG 9
+7086 AMPA_ExcToExc.json exp2syn 0.00010460466117399999 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 320668879 biophysical BKG 10
+7087 AMPA_ExcToExc.json exp2syn 0.000102697275052 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 324521027 biophysical BKG 10
+7088 AMPA_ExcToExc.json exp2syn 4.54803634403e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 348592897 biophysical BKG 15
+7089 AMPA_ExcToExc.json exp2syn 1.6157472386799998e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 395830185 biophysical BKG 17
+7090 AMPA_ExcToExc.json exp2syn 2.6050663404899997e-07 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 469798159 biophysical BKG 15
+7091 AMPA_ExcToExc.json exp2syn 1.08226473958e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 476126528 biophysical BKG 15
+7092 AMPA_ExcToExc.json exp2syn 2.16726862738e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 476218657 biophysical BKG 17
+7093 AMPA_ExcToInh.json exp2syn 0.000411199213436 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 341442651 biophysical BKG 13
+7094 AMPA_ExcToInh.json exp2syn 0.000124348268762 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 471077468 biophysical BKG 10
+7095 AMPA_ExcToInh.json exp2syn 8.63589187888e-05 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 484635029 biophysical BKG 9
+7096 AMPA_ExcToInh.json exp2syn 0.0006396414745800001 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 488501071 biophysical BKG 10
+7097 AMPA_ExcToExc.json exp2syn 2.88072552644e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 477135941 biophysical BKG 10
+7098 AMPA_ExcToExc.json exp2syn 1.08544702847e-05 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 483061182 biophysical BKG 16
+7099 AMPA_ExcToExc.json exp2syn 0.00041795757262699996 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 485574721 biophysical BKG 10
+7100 AMPA_ExcToExc.json exp2syn 3.56875366198e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 485909730 biophysical BKG 16
+7101 AMPA_ExcToExc.json exp2syn 4.49498536936e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 486146717 biophysical BKG 17
+7102 AMPA_ExcToExc.json exp2syn 7.51385109719e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 487601493 biophysical BKG 17
+7103 AMPA_ExcToInh.json exp2syn 8.47346785379e-10 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 313861608 biophysical BKG 17
+7104 AMPA_ExcToInh.json exp2syn 1.7484873836199999e-10 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 321023397 biophysical BKG 8
+7105 AMPA_ExcToInh.json exp2syn 4.6061197338199996e-10 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 330080937 biophysical BKG 10
+7106 AMPA_ExcToInh.json exp2syn 1.01433569258e-09 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 333785962 biophysical BKG 11
+7107 AMPA_ExcToInh.json exp2syn 1.3963791926e-10 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 396608557 biophysical BKG 11
+7108 AMPA_ExcToInh.json exp2syn 3.7093520011599994e-11 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 469610831 biophysical BKG 11
+7109 AMPA_ExcToInh.json exp2syn 5.931771095459998e-10 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 471077857 biophysical BKG 8
+7110 AMPA_ExcToInh.json exp2syn 8.13389673429e-12 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 471085676 biophysical BKG 11
+7111 AMPA_ExcToInh.json exp2syn 1.22243297143e-10 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 478793814 biophysical BKG 5
+7112 AMPA_ExcToInh.json exp2syn 8.905354866010001e-10 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 482516713 biophysical BKG 10
+7113 AMPA_ExcToInh.json exp2syn 4.4983153779100003e-10 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 484742372 biophysical BKG 10
+7114 AMPA_ExcToInh.json exp2syn 1.0867135272399999e-10 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 486783119 biophysical BKG 11
+7115 AMPA_ExcToInh.json exp2syn 9.34955530842e-05 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 318331342 biophysical BKG 10
+7116 AMPA_ExcToInh.json exp2syn 0.00010803359641399999 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 333604946 biophysical BKG 10
+7117 AMPA_ExcToInh.json exp2syn 2.37657238044e-05 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 487667205 biophysical BKG 7
+7118 AMPA_ExcToExc.json exp2syn 9.12610832095e-08 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 314642645 biophysical BKG 10
+7119 AMPA_ExcToExc.json exp2syn 2.33252407454e-07 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 324025371 biophysical BKG 12
+7120 AMPA_ExcToExc.json exp2syn 3.26294632394e-07 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 329550137 biophysical BKG 16
+7121 AMPA_ExcToExc.json exp2syn 2.35659688567e-07 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 473020156 biophysical BKG 13
+7122 AMPA_ExcToExc.json exp2syn 1.1759330164200001e-07 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 476616076 biophysical BKG 21
+7123 AMPA_ExcToExc.json exp2syn 2.59048905485e-07 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 479179020 biophysical BKG 15
+7124 AMPA_ExcToExc.json exp2syn 1.23906491177e-07 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 480087928 biophysical BKG 9
+7125 AMPA_ExcToExc.json exp2syn 1.69043404589e-07 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 480124551 biophysical BKG 11
+7126 AMPA_ExcToExc.json exp2syn 4.06974373835e-05 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 484564503 biophysical BKG 10
+7127 AMPA_ExcToExc.json exp2syn 1.50521115117e-07 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 484679812 biophysical BKG 12
+7128 AMPA_ExcToExc.json exp2syn 5.96221643336e-08 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 485836906 biophysical BKG 12
+7129 AMPA_ExcToExc.json exp2syn 5.21628191549e-07 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 486502127 biophysical BKG 13
+7130 AMPA_ExcToInh.json exp2syn 0.00016345984188999998 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 474626527 biophysical BKG 6
+7131 AMPA_ExcToInh.json exp2syn 0.000162911596495 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 313862167 biophysical BKG 13
+7132 AMPA_ExcToInh.json exp2syn 0.000541938022949 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 473016550 biophysical BKG 11
+7133 AMPA_ExcToInh.json exp2syn 0.000488084241135 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 485058595 biophysical BKG 10
+7134 AMPA_ExcToExc.json exp2syn 6.45497642608e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 318733871 biophysical BKG 8
+7135 AMPA_ExcToExc.json exp2syn 8.923984297210001e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 318808427 biophysical BKG 8
+7136 AMPA_ExcToExc.json exp2syn 0.000496764761999 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 321906005 biophysical BKG 10
+7137 AMPA_ExcToExc.json exp2syn 7.23018451543e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 370351753 biophysical BKG 15
+7138 AMPA_ExcToExc.json exp2syn 5.69716655102e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 386049446 biophysical BKG 11
+7139 AMPA_ExcToExc.json exp2syn 8.87646742159e-07 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 397351623 biophysical BKG 12
+7140 AMPA_ExcToExc.json exp2syn 3.17393521863e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 422738880 biophysical BKG 12
+7141 AMPA_ExcToExc.json exp2syn 8.66891006902e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 475459689 biophysical BKG 13
+7142 AMPA_ExcToExc.json exp2syn 6.0295255118e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 476455864 biophysical BKG 12
+7143 AMPA_ExcToExc.json exp2syn 3.6285060701300004e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 476457450 biophysical BKG 14
+7144 AMPA_ExcToExc.json exp2syn 2.19446294981e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 314804042 biophysical BKG 19
+7145 AMPA_ExcToExc.json exp2syn 8.50418991462e-05 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 314822529 biophysical BKG 10
+7146 AMPA_ExcToExc.json exp2syn 3.2328876098799997e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 314831019 biophysical BKG 19
+7147 AMPA_ExcToExc.json exp2syn 4.87421651171e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 320207387 biophysical BKG 19
+7148 AMPA_ExcToExc.json exp2syn 1.8150290544599998e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 323865917 biophysical BKG 19
+7149 AMPA_ExcToExc.json exp2syn 1.8366257082400002e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 324025297 biophysical BKG 14
+7150 AMPA_ExcToExc.json exp2syn 5.07176531485e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 349621141 biophysical BKG 19
+7151 AMPA_ExcToExc.json exp2syn 8.34070647575e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 354190013 biophysical BKG 29
+7152 AMPA_ExcToExc.json exp2syn 5.3440996316099995e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 468120757 biophysical BKG 19
+7153 AMPA_ExcToExc.json exp2syn 8.26948906135e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 468193142 biophysical BKG 13
+7154 AMPA_ExcToExc.json exp2syn 1.31435227745e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 469793303 biophysical BKG 11
+7155 AMPA_ExcToExc.json exp2syn 3.84847203435e-07 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 473601979 biophysical BKG 19
+7156 AMPA_ExcToExc.json exp2syn 4.55283152296e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 476048909 biophysical BKG 26
+7157 AMPA_ExcToExc.json exp2syn 8.81039856878e-05 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 476049169 biophysical BKG 10
+7158 AMPA_ExcToExc.json exp2syn 3.54327619287e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 476131588 biophysical BKG 12
+7159 AMPA_ExcToExc.json exp2syn 0.00010937202952600001 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 476216637 biophysical BKG 10
+7160 AMPA_ExcToExc.json exp2syn 4.836087944020001e-07 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 480116737 biophysical BKG 19
+7161 AMPA_ExcToExc.json exp2syn 3.4217696507e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 480169178 biophysical BKG 20
+7162 AMPA_ExcToExc.json exp2syn 9.9925332695e-07 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 480351780 biophysical BKG 19
+7163 AMPA_ExcToExc.json exp2syn 5.61744545055e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 480353286 biophysical BKG 16
+7164 AMPA_ExcToExc.json exp2syn 3.00007716018e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 466632464 biophysical BKG 17
+7165 AMPA_ExcToExc.json exp2syn 1.9043599696400002e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 471410185 biophysical BKG 16
+7166 AMPA_ExcToExc.json exp2syn 3.1860339713e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 471786879 biophysical BKG 15
+7167 AMPA_ExcToExc.json exp2syn 1.1479310747399999e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 471789504 biophysical BKG 18
+7168 AMPA_ExcToExc.json exp2syn 3.75831130288e-06 "[0.0, 150.0]" "[""basal"", ""apical""]" 1.7 471819401 biophysical BKG 13
+7169 AMPA_ExcToInh.json exp2syn 4.90650056929e-05 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 478110866 biophysical BKG 10
+7170 AMPA_ExcToInh.json exp2syn 1.6919188933e-06 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 481001895 biophysical BKG 13
+7171 AMPA_ExcToInh.json exp2syn 2.69561307658e-05 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 481136138 biophysical BKG 9
+7172 AMPA_ExcToInh.json exp2syn 4.90650056929e-05 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 482644550 biophysical BKG 10
+7173 AMPA_ExcToInh.json exp2syn 6.94902295355e-05 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 327962063 biophysical BKG 10
+7174 AMPA_ExcToInh.json exp2syn 0.00026667169313299995 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 464188580 biophysical BKG 6
+7175 AMPA_ExcToInh.json exp2syn 0.000445781827203 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 469753383 biophysical BKG 9
+7176 AMPA_ExcToInh.json exp2syn 0.00049789180971 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 473943881 biophysical BKG 12
+7177 AMPA_ExcToInh.json exp2syn 7.47840660728e-05 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 474267418 biophysical BKG 5
+7178 AMPA_ExcToInh.json exp2syn 6.25080767033e-05 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 475622680 biophysical BKG 8
+7179 AMPA_ExcToInh.json exp2syn 0.000240252609232 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 475622793 biophysical BKG 14
+7180 AMPA_ExcToInh.json exp2syn 0.000622934000301 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 479220013 biophysical BKG 7
+7181 AMPA_ExcToInh.json exp2syn 0.000189571632138 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 324493977 biophysical BKG 15
+7182 AMPA_ExcToInh.json exp2syn 6.44995619565e-05 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 473540161 biophysical BKG 8
+7183 AMPA_ExcToInh.json exp2syn 0.000130733654373 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 475068599 biophysical BKG 8
+7184 AMPA_ExcToInh.json exp2syn 5.33194772079e-05 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 476686112 biophysical BKG 12
+7185 AMPA_ExcToInh.json exp2syn 5.02902030052e-07 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 478110866 biophysical BKG 20
+7186 AMPA_ExcToInh.json exp2syn 7.255974158e-07 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 481001895 biophysical BKG 12
+7187 AMPA_ExcToInh.json exp2syn 7.674890601219997e-06 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 481136138 biophysical BKG 12
+7188 AMPA_ExcToInh.json exp2syn 3.44570539341e-06 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 482644550 biophysical BKG 12
+7189 AMPA_ExcToInh.json exp2syn 1.60654763925e-05 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 313862306 biophysical BKG 11
+7190 AMPA_ExcToInh.json exp2syn 0.00027790270035600004 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 323452196 biophysical BKG 10
+7191 AMPA_ExcToInh.json exp2syn 0.00016480367209 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 473564515 biophysical BKG 8
+7192 AMPA_ExcToInh.json exp2syn 4.12880409602e-05 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 476104386 biophysical BKG 11
+7193 AMPA_ExcToInh.json exp2syn 2.38618292655e-05 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 476754635 biophysical BKG 11
+7194 AMPA_ExcToInh.json exp2syn 6.251492472899999e-05 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 323475862 biophysical BKG 11
+7195 AMPA_ExcToInh.json exp2syn 0.000402366989674 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 324266189 biophysical BKG 10
+7196 AMPA_ExcToInh.json exp2syn 0.000402366989674 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 324466858 biophysical BKG 10
+7197 AMPA_ExcToInh.json exp2syn 3.97180090017e-05 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 464198958 biophysical BKG 7
+7198 AMPA_ExcToInh.json exp2syn 0.000402366989674 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 464212183 biophysical BKG 10
+7199 AMPA_ExcToInh.json exp2syn 0.000402366989674 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 466664172 biophysical BKG 10
+7200 AMPA_ExcToInh.json exp2syn 0.000402366989674 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 473543792 biophysical BKG 10
+7201 AMPA_ExcToInh.json exp2syn 0.000402366989674 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 475057898 biophysical BKG 10
+7202 AMPA_ExcToInh.json exp2syn 1.53719839271e-05 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 475517090 biophysical BKG 11
+7203 AMPA_ExcToInh.json exp2syn 3.38843435573e-05 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 478396248 biophysical BKG 8
+7204 AMPA_ExcToInh.json exp2syn 2.66028711514e-05 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 482690728 biophysical BKG 7
+7205 AMPA_ExcToInh.json exp2syn 0.00023428070968 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 475585413 biophysical BKG 7
+7206 AMPA_ExcToInh.json exp2syn 0.000294566060122 "[0.0, 1e+20]" "[""somatic"", ""basal""]" 1.7 478107198 biophysical BKG 8
+7207 instanteneousExc.json 10 0.00011370086543200004 10 10 1.7 100000101 point_process BKG 24
+7208 instanteneousExc.json 10 3.57389460956e-05 10 10 1.7 100000102 point_process BKG 19
+7209 instanteneousExc.json 10 3.08591847924e-05 10 10 1.7 100000103 point_process BKG 8
+7210 instanteneousExc.json 10 4.17038129696e-05 10 10 1.7 100000104 point_process BKG 15
+7211 instanteneousExc.json 10 0.000228971696428 10 10 1.7 100000105 point_process BKG 13
+7212 instanteneousExc.json 10 7.12400071838e-05 10 10 1.7 100000110 point_process BKG 16
+7213 instanteneousExc.json 10 2.87055018634e-05 10 10 1.7 100000111 point_process BKG 11
+7214 instanteneousExc.json 10 9.1594520656e-06 10 10 1.7 100000112 point_process BKG 10
+7215 instanteneousExc.json 10 5.88819972698e-05 10 10 1.7 100000108 point_process BKG 12
+7216 instanteneousExc.json 10 0.00030065204862 10 10 1.7 100000114 point_process BKG 6
+7217 instanteneousExc.json 10 0.000167082839483 10 10 1.7 100000115 point_process BKG 11
+7218 instanteneousExc.json 10 5.02836778418e-05 10 10 1.7 100000116 point_process BKG 11
+7219 instanteneousExc.json 10 0.00017466060485199999 10 10 1.7 100000119 point_process BKG 19
+7220 instanteneousExc.json 10 0.00012577956139 10 10 1.7 100000121 point_process BKG 13
+7221 instanteneousExc.json 10 0.000119237777039 10 10 1.7 100000106 point_process BKG 9
+7222 instanteneousExc.json 10 0.000275094735746 10 10 1.7 100000107 point_process BKG 14
+7223 instanteneousExc.json 10 0.00029195035382200004 10 10 1.7 100000113 point_process BKG 8
+7224 instanteneousExc.json 10 0.00012224801068500002 10 10 1.7 100000109 point_process BKG 12
+7225 instanteneousExc.json 10 0.00019334279733000009 10 10 1.7 100000120 point_process BKG 11
+7226 instanteneousExc.json 10 0.00018161753256 10 10 1.7 100000118 point_process BKG 7
+7227 instanteneousExc.json 10 0.00030276355946 10 10 1.7 100000117 point_process BKG 7

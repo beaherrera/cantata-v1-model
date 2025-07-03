@@ -1,0 +1,103 @@
+edge_type_id target_model_id target_label source_label weight_max weight_func weight_sigma distance_range target_sections delay params_file nsyns
+6580 471129934 e5Rbp4 LGN 6.4237961354e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 15
+6581 471143169 e5Rbp4 LGN 6.056731579600001e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 15
+6582 471758398 e5Rbp4 LGN 6.98947330596e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 15
+6583 471767045 e5Rbp4 LGN 3.96300574088e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 15
+6584 485574832 e5Rbp4 LGN 4.90700169766e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 15
+6585 485835055 e5Rbp4 LGN 5.390321749700001e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 15
+6586 485880739 e5Rbp4 LGN 4.94517182932e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 15
+6587 486052980 e5Rbp4 LGN 6.227496491100001e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 15
+6588 486110216 e5Rbp4 LGN 6.49633595184e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 15
+6589 487664663 e5Rbp4 LGN 6.83715640028e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 15
+6591 487661754 e23Cux2 LGN 7.911780950300001e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 15
+6592 321708130 i6Pvalb LGN 0.00058849913963 wmax  "[0.0, 1e+20]" "['somatic', 'basal']" 1.7 AMPA_ExcToInh.json 10
+6594 471087830 i6Pvalb LGN 0.00055719392574 wmax  "[0.0, 1e+20]" "['somatic', 'basal']" 1.7 AMPA_ExcToInh.json 10
+6596 478058328 i6Pvalb LGN 0.000701797010887 wmax  "[0.0, 1e+20]" "['somatic', 'basal']" 1.7 AMPA_ExcToInh.json 10
+6597 478828646 i6Pvalb LGN 0.0005972070176799999 wmax  "[0.0, 1e+20]" "['somatic', 'basal']" 1.7 AMPA_ExcToInh.json 10
+6599 314900022 e4Scnn1a LGN 8.10985903604e-06 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 80
+6602 348592897 e4Scnn1a LGN 3.73082419367e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 80
+6603 395830185 e4Scnn1a LGN 1.67671048018e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 80
+6604 469798159 e4Scnn1a LGN 1.3904471628e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 80
+6605 476126528 e4Scnn1a LGN 1.31280645936e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 80
+6606 476218657 e4Scnn1a LGN 3.12402608699e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 80
+6607 341442651 i23Pvalb LGN 0.00156923035195 wmax  "[0.0, 1e+20]" "['somatic', 'basal']" 1.7 AMPA_ExcToInh.json 15
+6609 484635029 i23Pvalb LGN 0.00139354603091 wmax  "[0.0, 1e+20]" "['somatic', 'basal']" 1.7 AMPA_ExcToInh.json 15
+6610 488501071 i23Pvalb LGN 0.00152597608881 wmax  "[0.0, 1e+20]" "['somatic', 'basal']" 1.7 AMPA_ExcToInh.json 15
+6611 477135941 e4other LGN 1.04636682529e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 80
+6612 483061182 e4other LGN 3.67934800172e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 80
+6614 485909730 e4other LGN 1.2882924794000005e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 80
+6615 486146717 e4other LGN 2.30426909085e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 80
+6616 487601493 e4other LGN 2.20323910662e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 80
+6617 313861608 i5Pvalb LGN 0.0007405883143630001 wmax  "[0.0, 1e+20]" "['somatic', 'basal']" 1.7 AMPA_ExcToInh.json 20
+6618 321023397 i5Pvalb LGN 0.0007714936750810003 wmax  "[0.0, 1e+20]" "['somatic', 'basal']" 1.7 AMPA_ExcToInh.json 20
+6620 333785962 i5Pvalb LGN 0.000649866595165 wmax  "[0.0, 1e+20]" "['somatic', 'basal']" 1.7 AMPA_ExcToInh.json 20
+6621 396608557 i5Pvalb LGN 0.0007970295241519999 wmax  "[0.0, 1e+20]" "['somatic', 'basal']" 1.7 AMPA_ExcToInh.json 20
+6622 469610831 i5Pvalb LGN 0.000756344211106 wmax  "[0.0, 1e+20]" "['somatic', 'basal']" 1.7 AMPA_ExcToInh.json 20
+6623 471077857 i5Pvalb LGN 0.0014908393687 wmax  "[0.0, 1e+20]" "['somatic', 'basal']" 1.7 AMPA_ExcToInh.json 20
+6624 471085676 i5Pvalb LGN 0.0008996468614369998 wmax  "[0.0, 1e+20]" "['somatic', 'basal']" 1.7 AMPA_ExcToInh.json 20
+6625 478793814 i5Pvalb LGN 0.000988439195858 wmax  "[0.0, 1e+20]" "['somatic', 'basal']" 1.7 AMPA_ExcToInh.json 20
+6628 486783119 i5Pvalb LGN 0.00083093955676 wmax  "[0.0, 1e+20]" "['somatic', 'basal']" 1.7 AMPA_ExcToInh.json 20
+6630 333604946 i4Pvalb LGN 0.000210324975582 wmax  "[0.0, 1e+20]" "['somatic', 'basal']" 1.7 AMPA_ExcToInh.json 75
+6631 487667205 i4Pvalb LGN 0.000201692773907 wmax  "[0.0, 1e+20]" "['somatic', 'basal']" 1.7 AMPA_ExcToInh.json 75
+6632 314642645 e4Rorb LGN 9.316690682589999e-06 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 80
+6633 324025371 e4Rorb LGN 1.57991849649e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 80
+6634 329550137 e4Rorb LGN 1.3043484499e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 80
+6635 473020156 e4Rorb LGN 1.4393033653e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 80
+6636 476616076 e4Rorb LGN 9.1515847796e-06 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 80
+6637 479179020 e4Rorb LGN 1.39482597901e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 80
+6638 480087928 e4Rorb LGN 1.05109096704e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 80
+6639 480124551 e4Rorb LGN 1.71873027913e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 80
+6641 484679812 e4Rorb LGN 1.85521591548e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 80
+6642 485836906 e4Rorb LGN 2.81782021797e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 80
+6643 486502127 e4Rorb LGN 1.15434841109e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 80
+6644 474626527 i4Htr3a LGN 0.0 wmax  "[0.0, 1e+20]" "['somatic', 'basal']" 1.7 AMPA_ExcToInh.json 20
+6645 313862167 i4Sst LGN 0.0 wmax  "[0.0, 1e+20]" "['somatic', 'basal']" 1.7 AMPA_ExcToInh.json 25
+6646 473016550 i4Sst LGN 0.0 wmax  "[0.0, 1e+20]" "['somatic', 'basal']" 1.7 AMPA_ExcToInh.json 25
+6648 318733871 e4Nr5a1 LGN 1.74100182066e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 80
+6649 318808427 e4Nr5a1 LGN 1.98345464907e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 80
+6651 370351753 e4Nr5a1 LGN 2.43039177133e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 80
+6652 386049446 e4Nr5a1 LGN 2.09137056492e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 80
+6653 397351623 e4Nr5a1 LGN 1.90490560747e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 80
+6654 422738880 e4Nr5a1 LGN 1.53045213302e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 80
+6655 475459689 e4Nr5a1 LGN 2.72114278699e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 80
+6656 476455864 e4Nr5a1 LGN 1.42523338546e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 80
+6657 476457450 e4Nr5a1 LGN 1.28554744689e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 80
+6658 314804042 e5noRbp4 LGN 5.3300336694999987e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 15
+6660 314831019 e5noRbp4 LGN 5.17567957856e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 15
+6661 320207387 e5noRbp4 LGN 5.250627986e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 15
+6662 323865917 e5noRbp4 LGN 5.82156254716e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 15
+6663 324025297 e5noRbp4 LGN 5.13517811278e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 15
+6664 349621141 e5noRbp4 LGN 5.53307268726e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 15
+6665 354190013 e5noRbp4 LGN 5.87224940266e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 15
+6666 468120757 e5noRbp4 LGN 5.21497553086e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 15
+6667 468193142 e5noRbp4 LGN 5.3503047537e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 15
+6668 469793303 e5noRbp4 LGN 4.96612765796e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 15
+6669 473601979 e5noRbp4 LGN 5.28639221558e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 15
+6670 476048909 e5noRbp4 LGN 5.12127307086e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 15
+6672 476131588 e5noRbp4 LGN 5.33966534146e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 15
+6674 480116737 e5noRbp4 LGN 5.66454860796e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 15
+6675 480169178 e5noRbp4 LGN 6.06306725584e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 15
+6676 480351780 e5noRbp4 LGN 5.49224712148e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 15
+6677 480353286 e5noRbp4 LGN 4.95445821348e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 15
+6678 466632464 e6Ntsr1 LGN 4.64128156705e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 15
+6679 471410185 e6Ntsr1 LGN 4.80119672931e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 15
+6680 471786879 e6Ntsr1 LGN 4.68572559003e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 15
+6681 471789504 e6Ntsr1 LGN 4.82058520915e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 15
+6682 471819401 e6Ntsr1 LGN 4.85145861728e-05 wmax  "[0.0, 150.0]" "['basal', 'apical']" 1.7 AMPA_ExcToExc.json 15
+6719 100000101 LIFe5Rbp4 LGN 0.0106809801693 wmax    1.7 instanteneousExc.json 15
+6720 100000102 LIFe23Cux2 LGN 0.00721580655228 wmax    1.7 instanteneousExc.json 15
+6721 100000103 LIFi6Pvalb LGN 0.0209809189596 wmax    1.7 instanteneousExc.json 10
+6722 100000104 LIFe4Scnn1a LGN 0.00144646429137 wmax    1.7 instanteneousExc.json 80
+6723 100000105 LIFi23Pvalb LGN 0.0115206696464 wmax    1.7 instanteneousExc.json 15
+6724 100000110 LIFe4other LGN 0.00165877797019 wmax    1.7 instanteneousExc.json 80
+6725 100000111 LIFi5Pvalb LGN 0.007935807930109999 wmax    1.7 instanteneousExc.json 20
+6726 100000112 LIFi4Pvalb LGN 0.004156806075610001 wmax    1.7 instanteneousExc.json 75
+6727 100000108 LIFe4Rorb LGN 0.0016065014887000002 wmax    1.7 instanteneousExc.json 80
+6728 100000114 LIFi4Htr3a LGN 0.0 wmax    1.7 instanteneousExc.json 20
+6729 100000115 LIFi4Sst LGN 0.0 wmax    1.7 instanteneousExc.json 25
+6730 100000116 LIFe4Nr5a1 LGN 0.0013927634897399998 wmax    1.7 instanteneousExc.json 80
+6731 100000119 LIFe5noRbp4 LGN 0.00624145577892 wmax    1.7 instanteneousExc.json 15
+6732 100000121 LIFe6Ntsr1 LGN 0.00393372190419 wmax    1.7 instanteneousExc.json 15
+6739 475585413 i1Htr3a LGN 0.0012715091441 wmax  "[0.0, 1e+20]" "['somatic', 'basal']" 1.7 AMPA_ExcToInh.json 10
+6740 478107198 i1Htr3a LGN 0.0007403804916549999 wmax  "[0.0, 1e+20]" "['somatic', 'basal']" 1.7 AMPA_ExcToInh.json 10
+6741 100000117 LIFi1Htr3a LGN 0.0330001980077 wmax    1.7 instanteneousExc.json 10
