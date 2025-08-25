@@ -33,3 +33,4 @@ config.precomputed_syns.json
 run_bionet_old.py
 build_files__/
 update_morphologies.py
+arbor.axon_stubs.p001-test/

@@ -290,18 +290,32 @@ def add_v1_v1_edges(
                     else row["target_sections"]
                 )
                 cm.add_properties(
-                    ["afferent_section_id", "afferent_section_pos"],
-                    # ['afferent_section_id', 'afferent_section_pos', 'afferent_swc_id', 'afferent_swc_pos'],
+                    [
+                        "afferent_section_id",
+                        "afferent_section_pos",
+                        "afferent_swc_id",
+                        "afferent_swc_pos",
+                        "afferent_section_xcoords",
+                        "afferent_section_ycoords",
+                        "afferent_section_zcoords",
+                    ],  # , 'afferent_swc_id', 'afferent_swc_pos'],
                     rule=rand_syn_locations,
                     rule_params={
                         "sections": target_sections,
                         "distance_range": distance_range,
-                        "return_swc": False,
-                        "return_coords": False,
+                        # "return_swc": False,
+                        "return_coords": True,
                         "morphology_dir": "./components/morphologies/axon_stubs",
                     },
-                    dtypes=[int, float],
-                    # dtypes=[int, float, int, float],
+                    dtypes=[
+                        int,
+                        float,
+                        int,
+                        float,
+                        float,
+                        float,
+                        float,
+                    ],  # , int, float],
                 )
 
                 cm.add_properties(
@@ -376,16 +390,21 @@ def add_lgn_v1_edges(v1, lgn_net, x_len=240.0, y_len=120.0, rng_seed=None):
                 [
                     "afferent_section_id",
                     "afferent_section_pos",
+                    "afferent_swc_id",
+                    "afferent_swc_pos",
+                    "afferent_section_xcoords",
+                    "afferent_section_ycoords",
+                    "afferent_section_zcoords",
                 ],  # , 'afferent_swc_id', 'afferent_swc_pos'],
                 rule=rand_syn_locations,
                 rule_params={
                     "sections": target_sections,
                     "distance_range": distance_range,
-                    "return_swc": False,
-                    "return_coords": False,
+                    # "return_swc": False,
+                    "return_coords": True,
                     "morphology_dir": "./components/morphologies/axon_stubs",
                 },
-                dtypes=[int, float],  # , int, float],
+                dtypes=[int, float, int, float, float, float, float],  # , int, float],
             )
             # edge_params.update({
             #     'target_sections': row['target_sections'],
@@ -435,16 +454,21 @@ def add_bkg_v1_edges(v1_net, bkg_net):
                 [
                     "afferent_section_id",
                     "afferent_section_pos",
+                    "afferent_swc_id",
+                    "afferent_swc_pos",
+                    "afferent_section_xcoords",
+                    "afferent_section_ycoords",
+                    "afferent_section_zcoords",
                 ],  # , 'afferent_swc_id', 'afferent_swc_pos'],
                 rule=rand_syn_locations,
                 rule_params={
                     "sections": target_sections,
                     "distance_range": distance_range,
-                    "return_swc": False,
-                    "return_coords": False,
+                    # "return_swc": False,
+                    "return_coords": True,
                     "morphology_dir": "./components/morphologies/axon_stubs",
                 },
-                dtypes=[int, float],  # , int, float],
+                dtypes=[int, float, int, float, float, float, float],  # , int, float],
             )
 
         #     edge_params.update({
