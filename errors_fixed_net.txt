@@ -1,0 +1,16 @@
+python plot_traces_check.py --bmtk_json_path config.15cells_net_lgn.json --canata_output_dir arbor.15cells_net_lgn_only/out --node_types network_15cells/v1_node_types.csv --save-as 15cells_net_lgn_only_fixed
+| Tag | RMS Error | Delta | Arbor | BMTK |
+|          0           | 0.002 | 2583010.353 | 1670498561.546|  1665340361.536 |
+|          4           | 0.005 | 8001202.625 | 1718294625.007|  1708621823.000 |
+|          6           | 0.002 | 3003386.283 | 1577663797.807|  1589948781.433 |
+|          8           | 0.002 | 3305988.616 | 1720024071.222|  1683785221.588 |
+python plot_traces_check.py --bmtk_json_path config.15cells_net_bkg.json --canata_output_dir arbor.15cells_net_bkg_only/out --node_types network_15cells/v1_node_types.csv --save-as 15cells_net_bkg_only_fixed
+| Tag | RMS Error | Delta | Arbor | BMTK |
+|          0           | 0.002 | 2670002.797 | 1397703853.127|  1397668796.210 |
+python plot_traces_check.py --bmtk_json_path config.15cells_net_norecc.json --canata_output_dir arbor.15cells_net_norecc/out --node_types network_15cells/v1_node_types.csv --save-as 15cells_net_norecc_fixed 
+| Tag | RMS Error | Delta | Arbor | BMTK |
+|          0           | 0.011 | 15834872.836 | 1404334115.714|  1401686588.817 |
+|          4           | 0.007 | 10176438.035 | 1537881863.541|  1530140467.659 |
+|          6           | 0.003 | 5392127.110 | 1577427034.114|  1560907258.310 |
+|          7           | 0.003 | 3727217.479 | 1349358158.886|  1345823993.422 |
+|          8           | 0.002 | 3528712.433 | 1669057581.538|  1635708508.219 |
