@@ -3,6 +3,7 @@ import warnings
 from bmtk.simulator import bionet
 from bmtk.simulator.bionet.default_setters.cell_models import set_params_peri
 from mpi4py import MPI
+from neuron import h
 
 comm = MPI.COMM_WORLD
 MPI_RANK = comm.Get_rank()
@@ -26,6 +27,7 @@ def run(config_file):
 
     net = bionet.BioNetwork.from_config(conf)
     sim = bionet.BioSimulator.from_config(conf, network=net)
+    h.secondorder = 0
     sim.run()
 
     # plot_raster(config_file=config_file, group_by='pop_name')

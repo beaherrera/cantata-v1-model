@@ -1,0 +1,16 @@
+node_type_id dynamics_params model_template population model_type ei morphology pop_name model_processing location
+478107198 478107198_fit.json ctdb:Biophys1.hoc v1 biophysical i Htr3a-Cre_NO152_Ai14-192819.04.02.01_491119743_m.swc i1Htr3a aibs_axon VisL1
+475622793 475622793_fit.json ctdb:Biophys1.hoc v1 biophysical i Htr3a-Cre_NO152_Ai14-185553.05.01.01_491119938_m.swc i23Htr3a aibs_axon VisL23
+484635029 484635029_fit.json ctdb:Biophys1.hoc v1 biophysical i Pvalb-IRES-Cre_Ai14-201791.05.01.01_496079599_m.swc i23Pvalb aibs_axon VisL23
+473540161 473540161_fit.json ctdb:Biophys1.hoc v1 biophysical i Sst-IRES-Cre_Ai14-182533.03.01.01_491770708_m.swc i23Sst aibs_axon VisL23
+386049446 386049446_fit.json ctdb:Biophys1.hoc v1 biophysical e Nr5a1-Cre_Ai14-177334.05.01.01_491459171_m.swc e4Nr5a1 aibs_axon VisL4
+485836906 485836906_fit.json ctdb:Biophys1.hoc v1 biophysical e Rorb-IRES2-Cre-D_Ai14-204764.04.01.01_496001039_m.swc e4Rorb aibs_axon VisL4
+469798159 469798159_fit.json ctdb:Biophys1.hoc v1 biophysical e Scnn1a-Tg3-Cre_Ai14-180214.05.01.01_491253802_m.swc e4Scnn1a aibs_axon VisL4
+483061182 483061182_fit.json ctdb:Biophys1.hoc v1 biophysical e Cux2-CreERT2_Ai14-198017.05.01.01_496121314_m.swc e4other aibs_axon VisL4
+487667205 487667205_fit.json ctdb:Biophys1.hoc v1 biophysical i Pvalb-IRES-Cre_Ai14-212813.03.01.01_496163999_m.swc i4Pvalb aibs_axon VisL4
+471129934 471129934_fit.json ctdb:Biophys1.hoc v1 biophysical e Rbp4-Cre_KL100_Ai14-180747.06.01.01_495335491_m.swc e5Rbp4 aibs_axon VisL5
+480351780 480351780_fit.json ctdb:Biophys1.hoc v1 biophysical e Rorb-IRES2-Cre-D_Ai14-197851.04.01.01_491770985_m.swc e5noRbp4 aibs_axon VisL5
+486783119 486783119_fit.json ctdb:Biophys1.hoc v1 biophysical i Pvalb-IRES-Cre_Ai14-212809.03.01.01_500961658_m.swc i5Pvalb aibs_axon VisL5
+482690728 482690728_fit.json ctdb:Biophys1.hoc v1 biophysical i Sst-IRES-Cre_Ai14-199390.05.01.01_492101025_m.swc i5Sst aibs_axon VisL5
+471819401 471819401_fit.json ctdb:Biophys1.hoc v1 biophysical e Ntsr1-Cre_Ai14-181184.02.02.01_491771181_m.swc e6Ntsr1 aibs_axon VisL6
+476754635 476754635_fit.json ctdb:Biophys1.hoc v1 biophysical i Sst-IRES-Cre_Ai14-188741.06.02.01_491771387_m.swc i6Sst aibs_axon VisL6

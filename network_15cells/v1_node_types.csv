@@ -1,0 +1,16 @@
+node_type_id model_processing model_type location ei morphology model_template population pop_name dynamics_params
+478107198 aibs_axon biophysical VisL1 i Htr3a-Cre_NO152_Ai14-192819.04.02.01_491119743_m.swc ctdb:Biophys1.hoc v1 i1Htr3a 478107198_fit.json
+475622793 aibs_axon biophysical VisL23 i Htr3a-Cre_NO152_Ai14-185553.05.01.01_491119938_m.swc ctdb:Biophys1.hoc v1 i23Htr3a 475622793_fit.json
+484635029 aibs_axon biophysical VisL23 i Pvalb-IRES-Cre_Ai14-201791.05.01.01_496079599_m.swc ctdb:Biophys1.hoc v1 i23Pvalb 484635029_fit.json
+473540161 aibs_axon biophysical VisL23 i Sst-IRES-Cre_Ai14-182533.03.01.01_491770708_m.swc ctdb:Biophys1.hoc v1 i23Sst 473540161_fit.json
+386049446 aibs_axon biophysical VisL4 e Nr5a1-Cre_Ai14-177334.05.01.01_491459171_m.swc ctdb:Biophys1.hoc v1 e4Nr5a1 386049446_fit.json
+485836906 aibs_axon biophysical VisL4 e Rorb-IRES2-Cre-D_Ai14-204764.04.01.01_496001039_m.swc ctdb:Biophys1.hoc v1 e4Rorb 485836906_fit.json
+469798159 aibs_axon biophysical VisL4 e Scnn1a-Tg3-Cre_Ai14-180214.05.01.01_491253802_m.swc ctdb:Biophys1.hoc v1 e4Scnn1a 469798159_fit.json
+483061182 aibs_axon biophysical VisL4 e Cux2-CreERT2_Ai14-198017.05.01.01_496121314_m.swc ctdb:Biophys1.hoc v1 e4other 483061182_fit.json
+487667205 aibs_axon biophysical VisL4 i Pvalb-IRES-Cre_Ai14-212813.03.01.01_496163999_m.swc ctdb:Biophys1.hoc v1 i4Pvalb 487667205_fit.json
+471129934 aibs_axon biophysical VisL5 e Rbp4-Cre_KL100_Ai14-180747.06.01.01_495335491_m.swc ctdb:Biophys1.hoc v1 e5Rbp4 471129934_fit.json
+480351780 aibs_axon biophysical VisL5 e Rorb-IRES2-Cre-D_Ai14-197851.04.01.01_491770985_m.swc ctdb:Biophys1.hoc v1 e5noRbp4 480351780_fit.json
+486783119 aibs_axon biophysical VisL5 i Pvalb-IRES-Cre_Ai14-212809.03.01.01_500961658_m.swc ctdb:Biophys1.hoc v1 i5Pvalb 486783119_fit.json
+482690728 aibs_axon biophysical VisL5 i Sst-IRES-Cre_Ai14-199390.05.01.01_492101025_m.swc ctdb:Biophys1.hoc v1 i5Sst 482690728_fit.json
+471819401 aibs_axon biophysical VisL6 e Ntsr1-Cre_Ai14-181184.02.02.01_491771181_m.swc ctdb:Biophys1.hoc v1 e6Ntsr1 471819401_fit.json
+476754635 aibs_axon biophysical VisL6 i Sst-IRES-Cre_Ai14-188741.06.02.01_491771387_m.swc ctdb:Biophys1.hoc v1 i6Sst 476754635_fit.json

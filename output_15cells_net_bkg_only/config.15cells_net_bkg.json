@@ -1,0 +1,66 @@
+{
+  "run": {
+    "tstop": 3000.0,
+    "dt": 0.01,
+    "dL": 5.0,
+    "spike_threshold": -15,
+    "nsteps_block": 20000,
+    "overwrite_output_dir": true
+  },
+  "target_simulator": "NEURON",
+  "conditions": {
+    "celsius": 34.0,
+    "v_init": -80
+  },
+  "inputs": {
+    "BKG_spikes": {
+      "input_type": "spikes",
+      "module": "sonata",
+      "input_file": "./inputs/bkg/bkg_spikes_n1_fr1000_dt0.25_100trials.trial_0_modified.h5",
+      "node_set": "bkg"
+    }
+  },
+  "output": {
+    "log_file": "./output_15cells_net_bkg_only/log.txt",
+    "output_dir": "./output_15cells_net_bkg_only",
+    "spikes_file": "./output_15cells_net_bkg_only/spikes.h5",
+    "spikes_file_csv": "./output_15cells_net_bkg_only/spikes.csv"
+  },
+  "reports": {
+    "membrane_potential": {
+      "cells": {
+        "population": "v1"
+      },
+      "variable_name": "v",
+      "module": "membrane_report",
+      "sections": "soma"
+    }
+  },
+  "components": {
+    "morphologies_dir": "./components/morphologies/axon_stubs",
+    "synaptic_models_dir": "./components/synaptic_models",
+    "mechanisms_dir": "./components/mechanisms",
+    "biophysical_neuron_models_dir": "./components/biophysical_neuron_templates",
+    "point_neuron_models_dir": "./components/point_neuron_templates"
+  },
+  "networks": {
+    "nodes": [
+      {
+        "nodes_file": "./network_15cells/v1_nodes.h5",
+        "node_types_file": "./network_15cells/v1_node_types.csv"
+      },
+      {
+        "nodes_file": "./network_15cells/bkg_nodes.h5",
+        "node_types_file": "./network_15cells/bkg_node_types.csv"
+      }
+    ],
+    "edges": [
+      {
+        "edges_file": "./network_15cells/bkg_v1_edges.h5",
+        "edge_types_file": "./network_15cells/bkg_v1_edge_types.csv"
+      }
+    ]
+  },
+  "config_path": "/Users/beatriz.herrera/Documents/Python-Scripts/arbor-bmtk/cantata-v1-model/config.15cells_net_bkg.json",
+  "config_dir": "/Users/beatriz.herrera/Documents/Python-Scripts/arbor-bmtk/cantata-v1-model"
+}

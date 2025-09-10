@@ -22,7 +22,9 @@ except ImportError as ie:
 
 
 from bmtk.builder import NetworkBuilder
-from bmtk.builder.bionet import rand_syn_locations
+
+# from bmtk.builder.bionet import rand_syn_locations
+from bmtk.builder.bionet.swc_reader import get_swc
 from bmtk.utils import sonata
 
 from build_files.node_funcs import (
@@ -41,8 +43,32 @@ from build_files.edge_funcs import (
 logger = logging.getLogger()
 
 
+def rand_syn_locations(
+    src,
+    trg,
+    sections=("soma", "apical", "basal"),
+    distance_range=(0.0, 1.0e20),
+    morphology_dir="./components/morphologies",
+    return_coords=False,
+    dL=None,
+):
+    if morphology_dir is None:
+        morphology_dir = "./components/morphologies"
+    trg_swc = get_swc(trg, morphology_dir=morphology_dir, use_cache=True, dL=dL)
+
+    sec_ids, seg_xs = trg_swc.choose_sections(sections, distance_range, n_sections=1)
+    sec_id, seg_x = sec_ids[0], seg_xs[0]
+    swc_id, swc_dist = trg_swc.get_swc_id(sec_id, seg_x)
+
+    if return_coords:
+        coords = trg_swc.get_coords(sec_id, seg_x)
+        return [sec_id, seg_x, swc_id, swc_dist, coords[0], coords[1], coords[2]]
+    else:
+        return [sec_id, seg_x, swc_id, swc_dist]
+
+
 def add_nodes_v1(
-    node_props_path="build_files/biophys_props/v1_node_models.json",
+    node_props_path="build_files/biophys_props/v1_node_models.biophysical_simplified.json",  # "build_files/biophys_props/v1_node_models.json",
     fraction=1.0,
     rng_seed=None,
 ):
@@ -57,7 +83,7 @@ def add_nodes_v1(
     for location, loc_dict in v1_models["locations"].items():
         for pop_name, pop_dict in loc_dict.items():
             for model_props in pop_dict["models"]:
-                N = int(np.max((model_props["N"] * fraction, 1)))
+                N = 1  # int(np.max((model_props["N"] * fraction, 1)))
                 model_type = model_props["model_type"]
 
                 if model_type != "biophysical":
@@ -316,7 +342,7 @@ def add_v1_v1_edges(
                         "sections": target_sections,
                         "distance_range": distance_range,
                         # "return_swc": False,
-                        "return_coords": False,
+                        "return_coords": True,
                         "morphology_dir": "./components/morphologies/axon_stubs",
                     },
                     dtypes=[int, float, int, float, float, float, float],
@@ -409,7 +435,7 @@ def add_lgn_v1_edges(v1, lgn_net, x_len=240.0, y_len=120.0, rng_seed=None):
                     "sections": target_sections,
                     "distance_range": distance_range,
                     # "return_swc": False,
-                    "return_coords": False,
+                    "return_coords": True,
                     "morphology_dir": "./components/morphologies/axon_stubs",
                 },
                 dtypes=[int, float, int, float, float, float, float],  # , int, float],
@@ -444,10 +470,10 @@ def add_bkg_v1_edges(v1_net, bkg_net):
             connection_params={"n": nsyns},
             model_template=None if trg_type.startswith("LIF") else "exp2syn",
             dynamics_params=row["dynamics_params"],
-            syn_weight=row["syn_weight"],
+            # syn_weight=row["syn_weight"],
             delay=row["delay"],
         )
-        # cm.add_properties("syn_weight", rule=row["syn_weight"], dtypes=float)
+        cm.add_properties("syn_weight", rule=row["syn_weight"], dtypes=float)
 
         if trg_type == "biophysical":
             distance_range = (
@@ -473,10 +499,10 @@ def add_bkg_v1_edges(v1_net, bkg_net):
                 ],  # , 'afferent_swc_id', 'afferent_swc_pos'],
                 rule=rand_syn_locations,
                 rule_params={
-                    "sections": target_sections,
-                    "distance_range": distance_range,
+                    "sections": ["soma"],  # target_sections,
+                    # "distance_range": distance_range,
                     # "return_swc": False,
-                    "return_coords": False,
+                    "return_coords": True,
                     "morphology_dir": "./components/morphologies/axon_stubs",
                 },
                 dtypes=[int, float, int, float, float, float, float],  # , int, float],

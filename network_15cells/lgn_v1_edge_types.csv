@@ -1,0 +1,12 @@
+edge_type_id target_query source_query model_template delay dynamics_params
+6580 node_type_id=='471129934' location=='LGN' exp2syn 1.7 AMPA_ExcToExc.json
+6604 node_type_id=='469798159' location=='LGN' exp2syn 1.7 AMPA_ExcToExc.json
+6609 node_type_id=='484635029' location=='LGN' exp2syn 1.7 AMPA_ExcToInh.json
+6612 node_type_id=='483061182' location=='LGN' exp2syn 1.7 AMPA_ExcToExc.json
+6628 node_type_id=='486783119' location=='LGN' exp2syn 1.7 AMPA_ExcToInh.json
+6631 node_type_id=='487667205' location=='LGN' exp2syn 1.7 AMPA_ExcToInh.json
+6642 node_type_id=='485836906' location=='LGN' exp2syn 1.7 AMPA_ExcToExc.json
+6652 node_type_id=='386049446' location=='LGN' exp2syn 1.7 AMPA_ExcToExc.json
+6676 node_type_id=='480351780' location=='LGN' exp2syn 1.7 AMPA_ExcToExc.json
+6682 node_type_id=='471819401' location=='LGN' exp2syn 1.7 AMPA_ExcToExc.json
+6740 node_type_id=='478107198' location=='LGN' exp2syn 1.7 AMPA_ExcToInh.json
