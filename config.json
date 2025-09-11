@@ -1,10 +1,10 @@
 {
   "manifest": {
     "$BASE_DIR": ".",
-    "$OUTPUT_DIR": "$BASE_DIR/output.axon_stubs.p001_annulus",
+    "$OUTPUT_DIR": "$BASE_DIR/output",
     "$BKG_DIR": "$BASE_DIR/inputs/bkg",
     "$LGN_DIR": "$BASE_DIR/inputs/lgn",
-    "$NETWORK_DIR": "$BASE_DIR/network.axon_stubs.p001_annulus",
+    "$NETWORK_DIR": "$BASE_DIR/network",
     "$COMPONENT_DIR": "$BASE_DIR/components"
   },
 
