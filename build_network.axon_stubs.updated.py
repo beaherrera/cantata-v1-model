@@ -68,7 +68,7 @@ def rand_syn_locations(
 
 
 def add_nodes_v1(
-    node_props_path="build_files/biophys_props/v1_node_models.biophysical_simplified.json",  # "build_files/biophys_props/v1_node_models.json",
+    node_props_path="build_files/biophys_props/v1_node_models.json",  # "build_files/biophys_props/v1_node_models.biophysical_simplified.json",  #
     fraction=1.0,
     rng_seed=None,
 ):
@@ -83,7 +83,7 @@ def add_nodes_v1(
     for location, loc_dict in v1_models["locations"].items():
         for pop_name, pop_dict in loc_dict.items():
             for model_props in pop_dict["models"]:
-                N = 1  # int(np.max((model_props["N"] * fraction, 1)))
+                N = int(np.max((model_props["N"] * fraction, 1)))
                 model_type = model_props["model_type"]
 
                 if model_type != "biophysical":
@@ -499,8 +499,8 @@ def add_bkg_v1_edges(v1_net, bkg_net):
                 ],  # , 'afferent_swc_id', 'afferent_swc_pos'],
                 rule=rand_syn_locations,
                 rule_params={
-                    "sections": ["soma"],  # target_sections,
-                    # "distance_range": distance_range,
+                    "sections": target_sections,
+                    "distance_range": distance_range,
                     # "return_swc": False,
                     "return_coords": True,
                     "morphology_dir": "./components/morphologies/axon_stubs",
