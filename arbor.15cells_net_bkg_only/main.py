@@ -91,9 +91,9 @@ ver = re.match(r"(\d+)\.(\d+)\.(\d+)(-\w+)?", A.__version__)
 if ver:
     mj, mn, pt, sf = ver.groups()
     ver = [int(mj), int(mn), int(pt)]
-    assert (
-        cur_version <= ver <= nxt_version
-    ), f"Arbor {cur_version_str} <= version <= {nxt_version_str} is required, got {A.__version__}"
+    assert cur_version <= ver <= nxt_version, (
+        f"Arbor {cur_version_str} <= version <= {nxt_version_str} is required, got {A.__version__}"
+    )
 else:
     print(f"Couldn't parse version {A.__version__}")
     exit(-42)
@@ -140,7 +140,7 @@ class Timing:
         self.timings[key] += pc()
 
     def show_times(self, root, prefix):
-        lbl = f"{' '*prefix}* {root}"
+        lbl = f"{' ' * prefix}* {root}"
         print(f"{lbl:<37}{self.times[root]:0.3f}")
         for child in self.children[root]:
             self.show_times(child, prefix + 2)

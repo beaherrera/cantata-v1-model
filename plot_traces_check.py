@@ -132,7 +132,7 @@ for report_name, report in cfg["reports"].items():
                                 and max_bmtk < 200
                             ):
                                 print(
-                                    f"| {node_id:>10}{mechanism:<10} | {delta/total_arbor:.3f} | {delta:.3f} | {total_arbor:.3f}|  {total_bmtk:.3f} |"
+                                    f"| {node_id:>10}{mechanism:<10} | {delta / total_arbor:.3f} | {delta:.3f} | {total_arbor:.3f}|  {total_bmtk:.3f} |"
                                 )
                             ax.plot(times_arbor, traces_arbor, label="arbor")
 

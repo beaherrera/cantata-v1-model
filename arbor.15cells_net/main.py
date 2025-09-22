@@ -91,9 +91,9 @@ ver = re.match(r"(\d+)\.(\d+)\.(\d+)(-\w+)?", A.__version__)
 if ver:
     mj, mn, pt, sf = ver.groups()
     ver = [int(mj), int(mn), int(pt)]
-    assert (
-        cur_version <= ver <= nxt_version
-    ), f"Arbor {cur_version_str} <= version <= {nxt_version_str} is required, got {A.__version__}"
+    assert cur_version <= ver <= nxt_version, (
+        f"Arbor {cur_version_str} <= version <= {nxt_version_str} is required, got {A.__version__}"
+    )
 else:
     print(f"Couldn't parse version {A.__version__}")
     exit(-42)
@@ -140,7 +140,7 @@ class Timing:
         self.timings[key] += pc()
 
     def show_times(self, root, prefix):
-        lbl = f"{' '*prefix}* {root}"
+        lbl = f"{' ' * prefix}* {root}"
         print(f"{lbl:<37}{self.times[root]:0.3f}")
         for child in self.children[root]:
             self.show_times(child, prefix + 2)
@@ -347,60 +347,22 @@ class recipe(A.recipe):
         mrf, dec = self.load_cable_data(gid)
         x, y, z = rec.gid_to_meta[gid]["position"]  # soma location
         xrot, yrot, zrot = rec.gid_to_meta[gid]["rotation"]  # rotation angles
+        rot = A.isometry.rotate(xrot, 1, 0, 0) * A.isometry.rotate(yrot, 0, 1, 0) * A.isometry.rotate(zrot, 0, 0, 1)
+
+        shifted = A.isometry.translate(-x, -y, -z) * rot
+
         # get translation and rotation
-        dx = (
-            x
-            - A.place_pwlin(
-                mrf,
-                (
-                    A.isometry.rotate(xrot, 1, 0, 0)
-                    * (
-                        A.isometry.rotate(yrot, 0, 1, 0)
-                        * A.isometry.rotate(zrot, 0, 0, 1)
-                    )
-                ),
-            )
-            .at(A.location(0, 0.5))
-            .x
-        )
-        dy = (
-            y
-            - A.place_pwlin(
-                mrf,
-                (
-                    A.isometry.rotate(xrot, 1, 0, 0)
-                    * (
-                        A.isometry.rotate(yrot, 0, 1, 0)
-                        * A.isometry.rotate(zrot, 0, 0, 1)
-                    )
-                ),
-            )
-            .at(A.location(0, 0.5))
-            .y
-        )
-        dz = (
-            z
-            - A.place_pwlin(
-                mrf,
-                (
-                    A.isometry.rotate(xrot, 1, 0, 0)
-                    * (
-                        A.isometry.rotate(yrot, 0, 1, 0)
-                        * A.isometry.rotate(zrot, 0, 0, 1)
-                    )
-                ),
-            )
-            .at(A.location(0, 0.5))
-            .z
-        )
+        dP = A.place_pwlin(mrf, shifted).at(A.location(0, 0.5))
+        dx = -dP.x
+        dy = -dP.y
+        dz = -dP.z
+
+        print(gid, dx, dy, dz)
+
         # apply translation and rotation
         pwl = A.place_pwlin(
             mrf,
-            (
-                A.isometry.rotate(xrot, 1, 0, 0)
-                * (A.isometry.rotate(yrot, 0, 1, 0) * A.isometry.rotate(zrot, 0, 0, 1))
-            )
-            * A.isometry.translate(dx, dy, dz),
+            rot * A.isometry.translate(dx, dy, dz),
         )
         lbl = A.label_dict().add_swc_tags()
         # NOTE in theory we could have more and in other places...
@@ -552,6 +514,8 @@ df = pd.DataFrame(
         "lid": spikes["source"]["index"],
     }
 )
+
+
 df["kind"] = df["gid"].map(lambda i: rec.gid_to_kid[i])
 df["population"] = df["gid"].map(lambda i: rec.gid_to_meta[i]["population"])
 df["type"] = df["gid"].map(lambda i: rec.gid_to_meta[i]["type_id"])
