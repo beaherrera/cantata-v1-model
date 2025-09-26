@@ -1,7 +1,7 @@
 {
   "manifest": {
     "$BASE_DIR": ".",
-    "$OUTPUT_DIR": "$BASE_DIR/output_1cell_per_model_norecc_dt0.01_dL5",
+    "$OUTPUT_DIR": "$BASE_DIR/output_1cell_per_model",
     "$BKG_DIR": "$BASE_DIR/inputs/bkg",
     "$LGN_DIR": "$BASE_DIR/inputs/lgn",
     "$NETWORK_DIR": "$BASE_DIR/network_1cell_per_model",
@@ -79,6 +79,11 @@
       }
     ],
     "edges": [
+      {
+        "edges_file": "$NETWORK_DIR/v1_v1_edges.h5",
+        "edge_types_file": "$NETWORK_DIR/v1_v1_edge_types.csv",
+        "enabled": "${use_recurrent}"
+      },
       {
         "edges_file": "$NETWORK_DIR/lgn_v1_edges.h5",
         "edge_types_file": "$NETWORK_DIR/lgn_v1_edge_types.csv"
