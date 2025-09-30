@@ -160,7 +160,7 @@ def load_trace_data(config, json_path_ref, canata_out_dir_ref, node_types, node_
     return None
 
 
-print("| Tag | RMS Error | Delta | Arbor | BMTK |")
+print("| Tag | Stim Type | RMS Error | Delta | Arbor | BMTK |")
 
 # Load node types once
 node_types = pd.read_csv(args.node_types, sep=" ")
@@ -229,7 +229,7 @@ for node_id in all_node_ids:
             and max_bmtk < 200
         ):
             print(
-                f"| {node_id:>10}{data1['mechanism']:<10} | {delta/total_arbor:.3f} | {delta:.3f} | {total_arbor:.3f}|  {total_bmtk:.3f} |"
+                f"| {node_id:>10}{data1['mechanism']:<10} | Syns | {delta/total_arbor:.3f} | {delta:.3f} | {total_arbor:.3f}|  {total_bmtk:.3f} |"
             )
 
         errors_df = pd.concat(
@@ -282,7 +282,20 @@ for node_id in all_node_ids:
                 label="arbor (config 2)",
                 # color="red",
             )
+            # Calculate and print error metrics for config 1
             delta2 = np.sum((data2["arbor_trace"].values - data2["bmtk_trace"]) ** 2)
+            total_arbor2 = np.sum(data2["arbor_trace"].values ** 2)
+            total_bmtk2 = np.sum(data2["bmtk_trace"] ** 2)
+            max_bmtk2 = np.max(np.abs(data2["bmtk_trace"]))
+            if (
+                (delta2 / total_arbor2 > 0.001 or np.isnan(total_arbor2))
+                and not np.isnan(max_bmtk2)
+                and max_bmtk2 < 200
+            ):
+                print(
+                    f"| {node_id:>10}{data2['mechanism']:<10} | iClamp | {delta2/total_arbor2:.3f} | {delta2:.3f} | {total_arbor2:.3f}|  {total_bmtk2:.3f} |"
+                )
+
             errors_df = pd.concat(
                 [
                     errors_df,

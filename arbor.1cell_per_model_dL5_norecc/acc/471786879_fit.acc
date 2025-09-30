@@ -1,0 +1,81 @@
+(arbor-component
+  (meta-data
+    (version "0.10-dev"))
+      (decor
+        (default
+          (axial-resistivity 216.579927866 (scalar 1.0)))
+        (default
+          (temperature-kelvin 307.15 (scalar 1.0)))
+        (paint (region "apic")
+          (membrane-capacitance 0.030584244097937124 (scalar 1.0)))
+        (paint (region "axon")
+          (membrane-capacitance 0.01 (scalar 1.0)))
+        (paint (region "dend")
+          (membrane-capacitance 0.030584244097937124 (scalar 1.0)))
+        (paint (region "soma")
+          (membrane-capacitance 0.01 (scalar 1.0)))
+        (paint (region "soma")
+             (ion-reversal-potential "k" -107 (scalar 1.0)))
+        (paint (region "soma")
+             (ion-reversal-potential "na" 53 (scalar 1.0)))
+        (paint (region "apic")
+          (density
+            (mechanism "pas/e=-89.654541015625"
+              ("g" 0.0000005221247017476316))))
+        (paint (region "axon")
+          (density
+            (mechanism "pas/e=-89.654541015625"
+              ("g" 0.00034801331277063534))))
+        (paint (region "dend")
+          (density
+            (mechanism "pas/e=-89.654541015625"
+              ("g" 0.000022618397414069016))))
+        (paint (region "soma")
+          (density
+            (mechanism "CaDynamics"
+              ("decay" 537.8849467797714)
+              ("gamma" 0.0000767475661138029))))
+        (paint (region "soma")
+          (density
+            (mechanism "Ca_HVA"
+              ("gbar" 0.0007218431730676287))))
+        (paint (region "soma")
+          (density
+            (mechanism "Ca_LVA"
+              ("gbar" 0.003006350481404111))))
+        (paint (region "soma")
+          (density
+            (mechanism "Ih"
+              ("gbar" 0.00003645626432950758))))
+        (paint (region "soma")
+          (density
+            (mechanism "Im"
+              ("gbar" 0.000000685101405017985))))
+        (paint (region "soma")
+          (density
+            (mechanism "K_P"
+              ("gbar" 0.02522500741468493))))
+        (paint (region "soma")
+          (density
+            (mechanism "K_T"
+              ("gbar" 0.00000705576552555144))))
+        (paint (region "soma")
+          (density
+            (mechanism "Kv3_1"
+              ("gbar" 0.07391307361103003))))
+        (paint (region "soma")
+          (density
+            (mechanism "NaTs"
+              ("gbar" 0.8185729039999134))))
+        (paint (region "soma")
+          (density
+            (mechanism "Nap"
+              ("gbar" 0.00000015559780273320626))))
+        (paint (region "soma")
+          (density
+            (mechanism "SK"
+              ("gbar" 0.036943951384256095))))
+        (paint (region "soma")
+          (density
+            (mechanism "pas/e=-89.654541015625"
+              ("g" 0.0009231660818428291))))))
