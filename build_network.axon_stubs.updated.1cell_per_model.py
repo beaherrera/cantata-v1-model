@@ -39,6 +39,7 @@ from build_files.edge_funcs import (
     connect_cells,
 )
 
+global soma_locations
 
 logger = logging.getLogger()
 
@@ -52,6 +53,8 @@ def rand_syn_locations(
     return_coords=False,
     dL=None,
 ):
+    global soma_locations
+
     if morphology_dir is None:
         morphology_dir = "./components/morphologies"
     trg_swc = get_swc(trg, morphology_dir=morphology_dir, use_cache=True, dL=dL)
@@ -59,6 +62,30 @@ def rand_syn_locations(
     sec_ids, seg_xs = trg_swc.choose_sections(sections, distance_range, n_sections=1)
     sec_id, seg_x = sec_ids[0], seg_xs[0]
     swc_id, swc_dist = trg_swc.get_swc_id(sec_id, seg_x)
+
+    if trg._node_type_properties["population"] == "v1":
+        soma_locations = pd.concat(
+            [
+                soma_locations,
+                pd.DataFrame(
+                    [
+                        [
+                            trg._node_type_properties["node_type_id"],
+                            trg_swc.get_coords(0, 0),
+                            trg_swc.get_coords(0, 0.5),
+                            trg_swc.get_coords(0, 1),
+                        ]
+                    ],
+                    columns=[
+                        "node_type_id",
+                        "coords_segx0",
+                        "coords_segx0.5",
+                        "coords_segx1",
+                    ],
+                ),
+            ],
+            ignore_index=True,
+        )
 
     if return_coords:
         coords = trg_swc.get_coords(sec_id, seg_x)
@@ -344,6 +371,7 @@ def add_v1_v1_edges(
                         # "return_swc": False,
                         "return_coords": True,
                         "morphology_dir": "./components/morphologies/axon_stubs",
+                        "dL": 5,
                     },
                     dtypes=[int, float, int, float, float, float, float],
                     # dtypes=[int, float, int, float],
@@ -437,6 +465,7 @@ def add_lgn_v1_edges(v1, lgn_net, x_len=240.0, y_len=120.0, rng_seed=None):
                     # "return_swc": False,
                     "return_coords": True,
                     "morphology_dir": "./components/morphologies/axon_stubs",
+                    "dL": 5,
                 },
                 dtypes=[int, float, int, float, float, float, float],  # , int, float],
             )
@@ -504,6 +533,7 @@ def add_bkg_v1_edges(v1_net, bkg_net):
                     # "return_swc": False,
                     "return_coords": True,
                     "morphology_dir": "./components/morphologies/axon_stubs",
+                    "dL": 5,
                 },
                 dtypes=[int, float, int, float, float, float, float],  # , int, float],
             )
@@ -596,6 +626,15 @@ if __name__ == "__main__":
     lgn_network_dir = os.path.join(args.output_dir, "lgn" if args.save_separate else "")
     bkg_network_dir = os.path.join(args.output_dir, "bkg" if args.save_separate else "")
 
+    soma_locations = pd.DataFrame(
+        columns=[
+            "node_type_id",
+            "coords_segx0",
+            "coords_segx0.5",
+            "coords_segx1",
+        ]
+    )
+
     ## First Create the V1 network w/ recurrent connections.
     logger.info("Building v1 Network")
     v1 = add_nodes_v1(rng_seed=args.rng_seed)
@@ -619,3 +658,7 @@ if __name__ == "__main__":
     bkg.build()
     logger.info(f'Saving bkg SONATA Network files to "{bkg_network_dir}".')
     bkg.save(output_dir=bkg_network_dir)
+
+    soma_locations.to_csv(
+        os.path.join(v1_network_dir, "v1_soma_locations.csv"), index=False
+    )
